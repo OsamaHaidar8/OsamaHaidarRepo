@@ -1,0 +1,431 @@
+body
+{
+   /*padding: 70px;*/
+   background-color: #ddf0d3;
+}
+
+/* Start navbar style*/
+.navbar
+{
+    min-height: 70px;
+}
+
+.navbar-default
+{
+    background-color: #164A41;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand
+{
+   color: #F1B24A;
+   font-size: 50px;
+   line-height: 40px;
+   font-weight: bolder;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: #164A41;
+    font-weight: bold;
+    background-color: #ddf0d3;
+
+}
+.navbar-default .navbar-nav > li > a:focus
+{
+    color: #E5E6E8;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+{
+    background-color: #ddf0d3;
+    color: #164A41;
+    font-weight: bold;
+}
+
+ul li a.active{
+   background-color: #9DC88D;
+   color: #164A41;
+}
+
+.navbar-brand
+{
+   float: right;
+}
+.navbar-toggle
+{
+    float: left;
+    margin-left:  15px;
+    margin-top: 18px;
+}
+.dropdown-menu
+{
+   background-color: #9DC88D;
+   min-width: 200px;
+}
+.dropdown-menu > li > a
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px;
+   -webkit-transition:padding 0.7s ease;
+    -moz-transition:padding 0.7s ease;
+    -o-transition:padding 0.7s ease;
+    transition:padding 0.7s ease;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+    padding-left: 25PX;
+    color:#164A41;
+}
+/* End navbar style*/
+
+/* Start about Section style*/
+.aboutsite h1
+{
+   font-weight: bolder;
+   color: #F1B24A;
+   line-height: 30px;
+   text-align: justify;
+   background-color: #164A41;
+   padding: 10px;
+   border-radius: 10px;
+   width: max-content;
+   height: 50px;
+}
+hr{
+   color: #164A41;
+   width: 100%;
+   size: 5px;
+   align-items: center;
+}
+.aboutsite p
+{
+   font-size: 25px;
+   line-height: 2em;
+   color: #464E6D;
+   text-align: justify;
+}
+.aboutsite {
+   background-color: #b5d1ab ;
+}
+.main-img{
+   padding-top: 30px;
+   margin-top: 30px;
+   display:inline-flex;
+   
+}
+
+/* End about Section style*/
+
+/* Start Decriptoin of courses Section style*/
+.descriptions {
+   background-color: #b5d1ab;
+}
+
+/*.des_content1
+{
+   padding-top: 50px;
+   text-align: right;
+}*/
+
+.thumbnail{
+   background-color: #ddf0d3;
+   align-content: center;
+   opacity: 0.9;
+   transition: 0.5s;
+   z-index: 1;
+   overflow: hidden;
+   margin-top: 20px;
+}
+.thumbnail:hover{
+   background-color: #cbf1b6;
+   opacity: 2;
+   transform: translateY(-20px);
+}
+
+.descriptions .container .thumbnail img
+{
+   min-height:250px;
+   max-height: 250px; 
+   margin: auto;
+   padding: 0px;
+   text-align: center;
+}
+.descriptions .container .thumbnail .caption
+{
+    background-color: #4D774E;
+}
+
+.descriptions .container .thumbnail .caption:hover
+{
+    background-color: #346134;
+}
+
+.descriptions .container .thumbnail .caption h3
+{
+   font-weight: bold;
+   color:#fff; 
+}
+.descriptions .container .thumbnail .caption p
+{   
+   color:#BBD4E8;
+   color:#E3E9ED;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.descriptions .container .thumbnail .btn-primary
+{
+   background-color: #164A41;
+   outline-style: unset;
+   font-size: 20px;
+}
+.descriptions .container .thumbnail .btn-primary:hover
+{
+   background-color: #0d2f2a;
+   font-weight: bold;
+}
+
+.wrap1   
+{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   min-height: 10px;
+}
+
+.thumbnail span{
+   transition: 0.5s;
+   opacity: 0;
+}
+.thumbnail:hover span{
+   opacity: 1;
+}
+/*animations*/
+/*start #1*/
+.thumbnail span:nth-child(1){
+   position: absolute;
+   top: 0;
+   left:0;
+   width: 100%;
+   height: 3px;
+   background: linear-gradient(to right, transparent, red);
+   animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+   0%{
+      transform: translateX(-100%);
+   }
+   100%{
+      transform: translateX(100%);
+   }
+}
+/*end #1*/
+
+/*start #2*/
+.thumbnail span:nth-child(2){
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 3px;
+   height: 100%;
+   background: linear-gradient(to bottom, transparent, red);
+   animation: animate2 2s linear infinite;
+   animation-delay: 1s;
+}
+@keyframes animate2 {
+   0%{
+      transform: translatey(-100%);
+   }
+   100%{
+      transform: translatey(100%);
+   }
+}
+/*end #2*/
+
+/*start #3*/
+.thumbnail span:nth-child(3){
+   position: absolute;
+   bottom: 0;
+   left:0;
+   width: 100%;
+   height: 3px;
+   background: linear-gradient(to left, transparent, red);
+   animation: animate3 2s linear infinite;
+}
+@keyframes animate3 {
+   0%{
+      transform: translateX(100%);
+   }
+   100%{
+      transform: translateX(-100%);
+   }
+}
+/*end #3*/
+
+/*start #4*/
+.thumbnail span:nth-child(4){
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 3px;
+   height: 100%;
+   background: linear-gradient(to top, transparent, red);
+   animation: animate4 2s linear infinite;
+   animation-delay: 1s;
+}
+@keyframes animate4 {
+   0%{
+      transform: translatey(100%);
+   }
+   100%{
+      transform: translatey(-100%);
+   }
+}
+/*end #4*/
+
+/* End Decriptoin of courses Section style*/
+/*start footer style*//*
+.footer
+{
+    padding-top: 20px;
+   padding-bottom: 20px;
+   background: #0B2270;
+}
+.footer .glyphicon
+{
+
+   color: #fff;
+   font-size: large;
+   padding: 10px;
+}
+.footer .container
+{
+   color: #fff;
+}
+.footer ul li
+{
+   display:inline;
+   color: #fff;
+}*/
+/*End footer style*/
+
+
+
+.modal , .modal1{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.modal_content , .modal_content1{
+	background-color: #fff;
+	margin: 10% auto;
+	/*padding: 20px;*/
+	width: 530px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3),0 7px 30px 0 rgba(0,0,0,0.2);
+	animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+.modal-header h2 , .modal-header1 h2{
+	margin: 0px;
+}
+.modal-header , .modal-header1{
+	background: #165272;
+	font-family: Times New Roman (برنامج نصي معقد لعناوين);
+    font-size: 36px;
+	text-align: center;
+	height: 60px;
+    color: white;
+    padding:8px;
+    border: 1px solid #daf1ff;
+}
+
+.modal-body , .modal-body1{
+	padding: 5px 15px;
+	text-align: left;
+}
+
+.modal-footer , .modal-footer1{
+	background: #165272;
+	padding:5px;
+	border: 1px solid #daf1ff;
+}
+	
+.closeBtn , .closeBtn1{
+	color: #FFFFFF;
+	float: right;
+	font-size: 20px;
+}
+
+.closeBtn:hover , .closeBtn:focus , .closeBtn1:hover , .closeBtn1:focus{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes modalopen{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+/*Subjects page style*/
+.about h1{
+   font-weight: bolder;
+   color: #164A41;
+   line-height: 30px;
+   text-align: justify;
+}
+p .des{
+   font-size: 00px !important;
+   line-height: 2em;
+   color: #464E6D;
+   text-align: justify !important;
+}
+legend{
+   font-size: 30px;
+   font-weight: bolder;
+   color: #F1B24A;
+   line-height: 30px;
+   text-align: center;
+   background-color:#164A41;
+   padding: 10px;
+   border-radius: 10px;
+   width: fit-content;
+   height: 50px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+/*
+font-weight: bolder;
+color: #F1B24A;
+line-height: 30px;
+text-align: justify;
+background-color: #164A41;
+padding: 10px;
+border-radius: 10px;
+width: max-content;
+height: 50px;
+*/
+/*End of subjects page style*/

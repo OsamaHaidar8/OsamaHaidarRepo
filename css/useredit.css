@@ -1,0 +1,27 @@
+body{
+   padding-top: 70px !important;
+    direction: ltr;
+}
+.form-group{
+    direction: ltr;
+    display: grid;
+    padding: 10px;
+}
+.form-control{
+    width: 50px;
+    size: 50px;
+}
+.content{
+    background-color: rgb(212, 235, 228);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.content .overlay{
+    padding: 50px 0;
+    color: rgb(27, 27, 27);
+}
+
+.content .h1{
+    font-size: 100px;
+
+}
